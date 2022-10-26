@@ -12,6 +12,7 @@ import {
   FaExclamationCircle,
   FaExclamationTriangle,
 } from "react-icons/fa";
+import BrandCarousel from "../BrandCarousel/BrandCarousel";
 
 const RightNavBar = () => {
   return (
@@ -27,31 +28,34 @@ const RightNavBar = () => {
       <div className='mt-4'>
         <h5>Find Us On</h5>
         <ListGroup>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaFacebook /> Facebook
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaTwitter /> Twitter
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaYoutube /> YouTube
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaWhatsapp /> Whatsapp
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaTwitch /> Twitch
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaDiscord /> Discord
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaExclamationCircle /> Privacy Policy
           </ListGroupItem>
-          <ListGroupItem className='mb-2'>
+          <ListGroupItem className='mb-2' type='button'>
             <FaExclamationTriangle /> Terms & Conditions
           </ListGroupItem>
         </ListGroup>
+      </div>
+      <div className='mt-3'>
+        <BrandCarousel></BrandCarousel>
       </div>
     </div>
   );
