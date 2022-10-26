@@ -1,9 +1,10 @@
 import React from "react";
+import Categories from "../../Pages/Category/Categories/Categories";
 
 const LeftNavBar = () => {
   return (
     <div>
-      <p>Left Nav Bar </p>
+      <Categories></Categories>
     </div>
   );
 };
