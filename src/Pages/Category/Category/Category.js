@@ -1,11 +1,19 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import NewsCard from "../../../Shared/NewsCard/NewsCard";
 
 const Category = () => {
-  const allNews = useLoaderData();
+  const categoryNews = useLoaderData();
+
   return (
     <div>
-      <h4>This is single Category news: {allNews.length}</h4>
+      {categoryNews.length === 0 ? (
+        <h1 className='text-center my-5'>Here is no News found</h1>
+      ) : (
+        categoryNews.map((news) => (
+          <NewsCard key={news._id} news={news}></NewsCard>
+        ))
+      )}
     </div>
   );
 };
