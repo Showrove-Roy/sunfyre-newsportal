@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
+import LeftNavBar from "../LeftNavBar/LeftNavBar";
 
 const Header = () => {
   return (
@@ -13,7 +15,11 @@ const Header = () => {
       variant='light'
       sticky='top'>
       <Container>
-        <Navbar.Brand href='#home'>Sun Fyre News</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/' className='text-decoration-none fw-bold text-secondary'>
+            Sun Fyre News
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>
@@ -43,6 +49,9 @@ const Header = () => {
               Dank memes
             </Nav.Link>
           </Nav>
+          <div className='d-lg-none'>
+            <LeftNavBar></LeftNavBar>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

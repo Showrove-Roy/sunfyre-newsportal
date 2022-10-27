@@ -10,9 +10,9 @@ const Main = () => {
   return (
     <div>
       <Header></Header>
-      <Container className='px-5 py-3'>
+      <Container className='py-3'>
         <Row>
-          <Col lg='2'>
+          <Col lg='2' className='d-none d-lg-block'>
             <LeftNavBar></LeftNavBar>
           </Col>
           <Col lg='7'>
